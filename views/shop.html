@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam's Styles</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./assets/shLogo.svg" />
+        <h1>Sam's Styles</h1>
+      </div>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./shop">Shop</a></li>
+      </ul>
+    </nav>
+    <main>
+      <input
+        type="text"
+        name="Name"
+        id="nameInput"
+        placeholder="Type your first & last name..."
+      />
+      <input
+        type="email"
+        name="Email Address"
+        id="emailInput"
+        placeholder="Type your email address..."
+      />
+      <div class="item">
+        <img src="./assets/FinalFour2026.png" alt="Basketball Court Design" />
+        <div class="sideText">
+          <h2>Basketball Court</h2>
+          <p>Cool, right? Yeah, it's cool.</p>
+          <a href="#pdf-preview" id="court" class="button">Buy Court Design</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./assets/double00.png" alt="Logo" />
+        <div class="sideText">
+          <h2>Personal Logo</h2>
+          <p>Cool, right? Yeah, it's cool.</p>
+          <a href="#pdf-preview" id="logo" class="button">Buy Personal Logo</a>
+        </div>
+      </div>
+
+      <a id="downloadBtn">Download Document</a>
+      <iframe src="" frameborder="0" id="pdf-preview"></iframe>
+
+      <script src="./js/app.js" type="module"></script>
+    </main>
+  </body>
+</html>
