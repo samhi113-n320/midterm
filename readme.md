@@ -6,4 +6,4 @@ A basic server/site for a basic shop for selling styles. I will sell designs for
 
 ### Live Link
 
-[Render Hosted Site]("https://midterm-udo7.onrender.com")
+[Render Hosted Site](https://midterm-udo7.onrender.com)
