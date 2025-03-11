@@ -8,11 +8,28 @@ function basicSetup(file, backColor, topBarColor) {
     file.setFillingColor("#" + topBarColor);
     file.addRect(0, 0, 1000, 25);
 
+    file.setTextColor("#ddd")
+    file.addHeader("Sam's Styles")
+
     file.setTextColor("#222");
     file.addHeader("Your Invoice", 5, 35);
     file.addText(`Invoice to:`);
     file.addText(document.querySelector("#nameInput").value)
     file.addText(document.querySelector("#emailInput").value)
+    file.addText("ACME Inc.")
+    file.addText("123 Bomb St.")
+    file.addText(" ");
+
+    const date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth()+1;
+    var day = date.getDate();
+    var hours = date.getHours();
+    var minutes = date.getMinutes()
+
+
+    file.addText(`Order Date: ${month}-${day}-${year} at ${hours}:${minutes}`)
+    file.addText (" ")
 
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     var barcodeLetters = "";
